@@ -68,3 +68,22 @@ text-align:center;
 header h1{
 margin:0;
 }
+.hero{
+    text-align:center;
+    padding:40px;
+}
+
+input{
+    width:80%;
+    max-width:400px;
+    padding:12px;
+    margin:10px;
+}
+
+button{
+    ...
+}
+
+.books{
+    ...
+}
