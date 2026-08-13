@@ -68,6 +68,20 @@ searchInput.addEventListener("input", function () {
         }
     });
 });
+ books.forEach(function(book) {
+    const button = book.querySelector("button");
+
+    button.addEventListener("click", function() {
+        const title = book.querySelector("h2").textContent;
+        const author = book.querySelector("p").textContent;
+
+        alert(
+            "Kitap: " + title +
+            "\nYazar: " + author +
+            "\n\nKitap detayları yakında burada olacak."
+        );
+    });
+});       
 </script>
 </body>
 </html>
