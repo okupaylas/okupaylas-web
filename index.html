@@ -83,5 +83,19 @@ searchInput.addEventListener("input", function () {
     });
 });       
 </script>
+   <script>
+  document.querySelector('.btn-like')?.addEventListener('click', function() {
+    this.innerHTML = '❤️ Beğenildi';
+  });
+
+  document.querySelector('.btn-comment')?.addEventListener('click', function() {
+    this.innerHTML = '💬 Yorum Açıldı';
+  });
+
+  document.querySelector('.btn-share')?.addEventListener('click', function() {
+    this.innerHTML = '🔄 Paylaşıldı';
+  });
+   </script>
+    
 </body>
 </html>
