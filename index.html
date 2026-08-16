@@ -51,6 +51,25 @@
 
 </div>
     <script>
+  const searchInput = document.getElementById("bookSearch");
+  const books = document.querySelectorAll(".card");
+
+  searchInput.addEventListener("input", function() {
+    const searchText = this.value.toLowerCase().trim();
+
+    books.forEach(function(book) {
+      const title = book.querySelector("h2").textContent.toLowerCase();
+      const author = book.querySelector("p").textContent.toLowerCase();
+
+      if (title.includes(searchText) || author.includes(searchText)) {
+        book.style.display = "block";
+      } else {
+        book.style.display = "none";
+      }
+    });
+  });
+</script>
+
 const searchInput = document.getElementById("bookSearch");
 const books = document.querySelectorAll(".card");
 
