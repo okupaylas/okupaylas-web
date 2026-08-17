@@ -80,7 +80,14 @@ searchInput.addEventListener("input", function () {
     books.forEach(function (book) {
         const title = book.querySelector("h2").textContent.toLowerCase();
         const author = book.querySelector("p").textContent.toLowerCase();
-
+function detayAc(buton) {
+const detay = buton.nextElementSibling;
+if (detay.style.display === "none") {
+detay.style.display = "block";
+} else {
+detay.style.display = "none";
+}
+}
         if (title.includes(searchText) || author.includes(searchText)) {
             book.style.display = "block";
         } else {
